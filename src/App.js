@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// import  Filter from "./components/FilterBar";
+// import CardData from "./components/Data";
+// import VehicleHome from "./components/vehicle/vehiclehome"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+// import {} from '@material-ui/core';
+import { BrowserRouter as Router, Route, Link , Routes } from "react-router-dom";
+import Login from './components/Login';
+import Forgot from './components/forgot';
+import ForgotMob from './components/forgotmob';
+import Otp from './components/Otp';
+import SetUp from './components/SetUp';
+import Update from './components/Update';
+
+import "./App.css";
+
+
+
+function MyApp (){
+
+  return(
+    <div>
+     <Router>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="forgot" element={<Forgot />} />
+      <Route path="forgotmob" element={<ForgotMob />} />
+      <Route path="otp" element={<Otp />} />
+      <Route path="setup" element={<SetUp />} />
+      <Route path="update" element={<Update />} />
+      
+    </Routes>
+  </Router>,
     </div>
   );
 }
-
-export default App;
+export default MyApp;
