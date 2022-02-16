@@ -15,12 +15,12 @@ function Otp() {
            
             <form action="action_page.php" method="post">
             <label>
-            <Link to="/forgot"><input type="radio"  name="radio" checked/></Link>
-                        <span>Mobile</span>
+            <input type="radio"  name="radio" />
+                        <span>Email</span>
                     </label>
                     <label>
-                        <input type="radio"  name="radio" checked/>
-                        <span>Email</span>
+                    <Link to="/forgot"> <input type="radio"  name="radio" /></Link>
+                        <span> Mobile</span>
                     </label>     
                
                 <div className="container-input">

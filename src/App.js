@@ -10,6 +10,7 @@ import ForgotMob from './components/forgotmob';
 import Otp from './components/Otp';
 import SetUp from './components/SetUp';
 import Update from './components/Update';
+import Dashboard from "./components/Dashboard";
 
 import "./App.css";
 
@@ -27,6 +28,7 @@ function MyApp (){
       <Route path="otp" element={<Otp />} />
       <Route path="setup" element={<SetUp />} />
       <Route path="update" element={<Update />} />
+      <Route path="dashboard" element={<Dashboard />} />
       
     </Routes>
   </Router>,

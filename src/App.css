@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
 }
 main {
   height: 100vh;
@@ -250,4 +251,74 @@ label span:before{
 
 input[type="radio"]:checked + span:before{
   box-shadow: inset 0 0 0 10px #ff9900;
+}
+.dash-li li{
+  list-style: none;
+  font-size: 20px;
+  padding: 10px 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.side-menu{
+  position: fixed;
+  width: 20vw;
+  min-height: 100vh;
+  background: navajowhite;
+  display: flex;
+  flex-direction: column;
+}
+.side-menu .brand-name{
+  height:10vh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dash-li li:hover{
+  background: #fff;
+  color: #c2b0e4;
+}
+.dash-container{
+  position: absolute;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  background: #f1f1f1;
+}
+.dash-container .header{
+position: fixed;
+top: 0;
+right: 0;
+width: 80vw;
+height: 10vh;
+background: #c2b0e4;
+}
+.brand-name h3{
+  color: #ff9900;
+ padding-right: 90px;
+}
+.form-title .user-icon{
+  position: fixed;
+  font-size: 42px;
+  color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  /* text-align: center; */
+  border-radius: 45px;
+  top: -50px;
+  right: 590px;
+}
+
+.form-title .plus-icon{
+  position: fixed;
+  font-size: 42px;
+  color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  /* text-align: center; */
+  border-radius: 45px;
+  top: -2px;
+  right: 120px;
 }

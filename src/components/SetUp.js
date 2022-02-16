@@ -18,6 +18,7 @@ function SetUp() {
                   <label for="uname"><b>New Password</b></label>
                   {/* <i className="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i> */}
                   <i class="bi bi-eye-slash" id="togglePassword"></i>
+                  
                 </div>  
                 <div class="container-input">
                   

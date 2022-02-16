@@ -8,7 +8,7 @@ function login() {
       
       <main>
         <div className="logo">
-          < img src="images/forgot.jpg"/> 
+          < img src="../images/Assets/Forgot Password.png"/> 
            </div>    
         <section>
             <h2 className="forgot-head">Forgot Password</h2>
@@ -19,12 +19,12 @@ function login() {
             {/* <div class="container-submit">  */}
 
             <label>
-            <Link to="/forgotmob"><input type="radio"  name="radio" checked/></Link>
-                        <span>Mobile</span>
+           <input type="radio"  name="radio" />
+                        <span>Email</span>
                     </label>
                     <label>
-                        <input type="radio"  name="radio" checked/>
-                        <span>Email</span>
+                    <Link to="/forgotmob"> <input type="radio"  name="radio" /></Link>
+                        <span> Mobile</span>
                     </label>            
                   
                {/* <input type="radio" className="radiocheck" name="mob" value="male"/> Mobile>

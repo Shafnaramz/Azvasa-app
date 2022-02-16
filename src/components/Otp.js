@@ -1,7 +1,14 @@
 import React from "react";
+import { useState ,useEffect } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function Otp() {
+  const [counter, setCounter] = React.useState(59);
+    React.useEffect(() => {
+        const timer =
+        counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
+        return () => clearInterval(timer);
+    }, [counter]);
   return (
     <div>
       <main>
@@ -27,9 +34,9 @@ function Otp() {
                 </div> 
                
             <div className="resend"> 
-            <h4 >1.20sec</h4>
+            <h4 >00:{counter}sec</h4>
            
-                 <Link to="forgot">   <a href="#">Resend OTP</a></Link>
+                  <a href="#">Resend OTP</a>
                   </div>
             <div className="container-submit">             
                   
